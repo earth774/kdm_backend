@@ -1,0 +1,130 @@
+{
+	"variables": [],
+	"info": {
+		"name": "KDM_ifoam_standard",
+		"_postman_id": "b4cf9d90-db5e-56e6-7510-bdc242965442",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ifoam_standard_title_info index",
+			"request": {
+				"url": "{{host}}\\ifoam_standard_title_info",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ifoam_standard_lv2_title_info index",
+			"request": {
+				"url": "{{host}}\\ifoam_standard_lv2_title_info",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ifoam_standard_lv3_title_info index",
+			"request": {
+				"url": "{{host}}\\ifoam_standard_lv3_title_info",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ifoam_standard_lv4_title_info index",
+			"request": {
+				"url": "{{host}}\\ifoam_standard_lv4_title_info",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ifoam_standard_lv2_title_info get data",
+			"request": {
+				"url": "{{host}}\\ifoam_standard_lv2_title_info\\title\\1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ifoam_standard_lv3_title_info get data",
+			"request": {
+				"url": "{{host}}\\ifoam_standard_lv3_title_info\\title\\1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ifoam_standard_lv4_title_info get data",
+			"request": {
+				"url": "{{host}}\\ifoam_standard_lv4_title_info\\title\\1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

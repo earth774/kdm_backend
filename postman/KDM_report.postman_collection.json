@@ -1,0 +1,481 @@
+{
+	"info": {
+		"name": "KDM_report",
+		"_postman_id": "bcd4be2b-962b-212d-a83b-6d9e95a3867f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "chart_info",
+			"description": "",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{host}}\\chart_info",
+							"host": [
+								"{{host}}\\chart_info"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{host}}\\chart_info\\1",
+							"host": [
+								"{{host}}\\chart_info\\1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get by user_id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{host}}\\chart_info\\user_id\\1",
+							"host": [
+								"{{host}}\\chart_info\\user_id\\1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\" : \"กราฟทดสอบ\",\n  \"chart_type_id\" : 1,\n  \"user_type_chart_data_id\" : 1,\n  \"user_id\" : 1\n}"
+						},
+						"url": {
+							"raw": "{{host}}\\chart_info",
+							"host": [
+								"{{host}}\\chart_info"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\" : \"กราฟทดสอบ\",\n  \"chart_type_id\" : 1,\n  \"user_type_chart_data_id\" : 1,\n  \"user_id\" : 1\n}"
+						},
+						"url": {
+							"raw": "{{host}}\\chart_info\\1",
+							"host": [
+								"{{host}}\\chart_info\\1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{host}}\\chart_info\\1",
+							"host": [
+								"{{host}}\\chart_info\\1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "chart_data_item_info",
+			"description": "",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{host}}\\chart_data_item_info",
+							"host": [
+								"{{host}}\\chart_data_item_info"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{host}}\\chart_data_item_info\\1",
+							"host": [
+								"{{host}}\\chart_data_item_info\\1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get by chart info id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{host}}\\chart_data_item_info\\chart_info\\1",
+							"host": [
+								"{{host}}\\chart_data_item_info\\chart_info\\1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "add chart data item",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"chart_info_id\" : 1,\n  \"chart_data_item_list\" : [\n    {\n      \"order\" : 1,\n      \"color\" : \"#FAFAFA\",\n      \"chart_info_id\" : 1,\n      \"data_info_id\" : 1\n    },\n    {\n      \"order\" : 2,\n      \"color\" : \"#FAFAFA\",\n      \"chart_info_id\" : 1,\n      \"data_info_id\" : 1\n    }    \n  ]\n}"
+						},
+						"url": {
+							"raw": "{{host}}\\chart_data_item_info",
+							"host": [
+								"{{host}}\\chart_data_item_info"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "report",
+			"description": "",
+			"item": [
+				{
+					"name": "get year list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{host}}\\report\\year?user_type_chart_data_id=1",
+							"host": [
+								"{{host}}\\report\\year"
+							],
+							"query": [
+								{
+									"key": "user_type_chart_data_id",
+									"value": "1",
+									"equals": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get chart data by chart_info id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{host}}\\report\\data?chart_info_id=1&year=2016",
+							"host": [
+								"{{host}}\\report\\data"
+							],
+							"query": [
+								{
+									"key": "chart_info_id",
+									"value": "1",
+									"equals": true
+								},
+								{
+									"key": "year",
+									"value": "2016",
+									"equals": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get chart data by user_id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{host}}\\report\\user\\1",
+							"host": [
+								"{{host}}\\report\\user\\1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "get user type list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/user_type",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"user_type"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get chart type",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/chart_type",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"chart_type"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get product by resource",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/product_info/resource/0",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"product_info",
+						"resource",
+						"0"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get user type chart data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/user_type_chart_data/user_type/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"user_type_chart_data",
+						"user_type",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "authen",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\" : \"user\",\n  \"fullname\" : \"nat srisawaivilai\",\n  \"email\" : \"nat.sri@gmail.com\",\n  \"password\" : \"123456\",\n  \"user_role_id\" : \"1\"\n}"
+				},
+				"url": {
+					"raw": "{{host}}/user/authen",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"user",
+						"authen"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		}
+	]
+}

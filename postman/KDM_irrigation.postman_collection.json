@@ -1,0 +1,104 @@
+{
+	"variables": [],
+	"info": {
+		"name": "KDM_irrigation",
+		"_postman_id": "e7a6e8c1-c0ec-7251-a6f5-86e5364219d7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "irrigation index",
+			"request": {
+				"url": "{{host}}\\irrigation_data_feeder_info",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "water quality index",
+			"request": {
+				"url": "{{host}}\\water_quality",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "irrigation type index",
+			"request": {
+				"url": "{{host}}\\irrigation_type",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "irrigation get",
+			"request": {
+				"url": "{{host}}\\irrigation_data_feeder_info\\1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "irrigation add",
+			"request": {
+				"url": "{{host}}\\irrigation_data_feeder_info",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"data_datetime\": \"2017-10-10\",\n\t\"gps_lat\" : \"10\",\n\t\"gps_long\" : \"20\",\n\t\"city\" : \"\",\n\t\"country\" : \"\",\n\t\"irrigation_type_id\" : \"\",\n\t\"water_quality_id\" : \"\",\n\t\"o2_percent\" : \"\",\n\t\"co2_percent\" : \"\",\n\t\"poision_ppm\" : \"\",\n\t\"organism_alive\" : \"\",\n\t\"water_capacity_metres\" : \"\",\n\t\"max_water_capacity_metres\" : \"\",\n\t\"min_water_capacity_metres\" : \"\",\n\t\"cubic_water_capacity_metres\" : \"\",\n\t\"ph_value\" : \"\",\n\t\"water_speed\" : \"\",\n\t\"rain_qty_mm\" : \"\",\n\t\"max_temp_celsius\" : \"\",\n\t\"min_temp_celsius\" : \"\",\n\t\"avg_temp_celsius\" : \"\",\n\t\"sunlight_percent\" : \"\",\n\t\"water_volatile_cubic_metres\" : \"\",\n\t\"wind_speed\" : \"\",\n\t\"wind_direction\" : \"\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

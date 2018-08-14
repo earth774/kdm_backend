@@ -1,0 +1,62 @@
+{
+	"variables": [],
+	"info": {
+		"name": "KDM_gap_standard",
+		"_postman_id": "2021cd8e-ecd4-3251-2dc1-8e7a32ffdfcb",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "gap_standard_title_info index",
+			"request": {
+				"url": "{{host}}\\gap_standard_title_info",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "gap_standard_item_info index",
+			"request": {
+				"url": "{{host}}\\gap_standard_item_info",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "gap_standard_item_info get data",
+			"request": {
+				"url": "{{host}}\\gap_standard_item_info\\title\\1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{api_token}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

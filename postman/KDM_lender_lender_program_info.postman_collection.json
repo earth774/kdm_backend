@@ -1,0 +1,163 @@
+{
+	"variables": [],
+	"info": {
+		"name": "KDM_lender_lender_program_info",
+		"_postman_id": "cffe9100-565d-41c7-3da3-683e15891561",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "lender_lender_program_info",
+			"description": "",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"url": "{{host}}\\lender_lender_program_info",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"url": "{{host}}\\lender_lender_program_info\\1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get by user_id",
+					"request": {
+						"url": {
+							"raw": "{{host}}\\lender_lender_program_info\\user_id\\1?user_type_id=1",
+							"host": [
+								"{{host}}\\lender_lender_program_info\\user_id\\1"
+							],
+							"query": [
+								{
+									"key": "user_type_id",
+									"value": "1",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"url": "{{host}}\\lender_lender_program_info",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\" : \"1\",\n    \"user_type_id\" : \"1\",\n    \"name\" : \"ชื่อ\",\n   \t\"condition\" : \"เงื่อนไข\",\n   \t\"minimum\" : \"1\",\n   \t\"maximum\" : \"10\",\n    \"interest\" : \"1000\",\n    \"installment_mo\" : \"1\",\n    \"start_date\" : \"2017-10-08\",\n    \"end_date\" : \"2017-10-08\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "edit by user_id",
+					"request": {
+						"url": {
+							"raw": "{{host}}\\lender_lender_program_info\\1?user_type_id=1",
+							"host": [
+								"{{host}}\\lender_lender_program_info\\1"
+							],
+							"query": [
+								{
+									"key": "user_type_id",
+									"value": "1",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"ชื่อ1\",\n   \t\"condition\" : \"เงื่อนไข\",\n   \t\"minimum\" : \"1\",\n   \t\"maximum\" : \"10\",\n    \"interest\" : \"1000\",\n    \"installment_mo\" : \"1\",\n    \"start_date\" : \"2017-10-08\",\n    \"end_date\" : \"2017-10-08\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"url": "{{host}}\\lender_lender_program_info\\1",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

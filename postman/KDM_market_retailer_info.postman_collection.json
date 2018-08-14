@@ -1,0 +1,135 @@
+{
+	"variables": [],
+	"info": {
+		"name": "KDM_market_retailer_info",
+		"_postman_id": "5967ffea-8503-476c-1a72-8e0ea836393f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "market_retailer_info",
+			"description": "",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"url": "{{host}}\\market_retailer_info",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"url": "{{host}}\\market_retailer_info\\1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get by user_id",
+					"request": {
+						"url": "{{host}}\\market_retailer_info\\user_id\\1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"url": "{{host}}\\market_retailer_info",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user_id\" : \"1\",\n    \"phone\" : \"0812312315\",\n    \"address\" : \"204/229\",\n    \"province_id\" : \"44\",\n    \"district_id\" : \"648\",\n    \"sub_district_id\" : \"5797\",\n    \"shop_name\" : \"\",\n    \"lot_number\" : \"\",\n    \"market_name\" : \"\",\n    \"market_address\" : \"\",\n    \"total_shop\" : \"\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "edit by user_id",
+					"request": {
+						"url": "{{host}}\\market_retailer_info\\1",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user_id\" : \"1\",\n    \"phone\" : \"0812312315\",\n    \"address\" : \"204/229\",\n    \"province_id\" : \"44\",\n    \"district_id\" : \"648\",\n    \"sub_district_id\" : \"5797\",\n    \"shop_name\" : \"\",\n    \"lot_number\" : \"\",\n    \"market_name\" : \"\",\n    \"market_address\" : \"\",\n    \"total_shop\" : \"\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"url": "{{host}}\\market_retailer_info\\1",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{api_token}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

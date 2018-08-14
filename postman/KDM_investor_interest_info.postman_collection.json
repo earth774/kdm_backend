@@ -1,0 +1,236 @@
+{
+	"id": "cac58688-1cbf-38e6-631f-f43d555e34d8",
+	"name": "KDM_investor_interest_info",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "048112ba-b170-8498-1b81-2760c754486b",
+			"name": "investor_interest_info",
+			"description": "",
+			"order": [
+				"65aff08a-157c-1dd2-3cfc-d3013b9ad664",
+				"fb5558a3-9d49-9c1b-07b9-89c25e1ac370",
+				"8e34f068-b00d-d3bf-8449-e6b679e9487a",
+				"88c124d3-30b0-0ede-68fa-46d2a13dbf93",
+				"0690d899-8b70-b98c-bd4e-d9198a46d5f8",
+				"0916def2-4ea0-c97b-3cf8-871c26d5e780"
+			],
+			"folders_order": [],
+			"owner": "541671",
+			"collectionId": "cac58688-1cbf-38e6-631f-f43d555e34d8"
+		}
+	],
+	"folders_order": [
+		"048112ba-b170-8498-1b81-2760c754486b"
+	],
+	"timestamp": 1507454201782,
+	"owner": "541671",
+	"public": false,
+	"requests": [
+		{
+			"id": "0690d899-8b70-b98c-bd4e-d9198a46d5f8",
+			"headers": "Content-Type: application/json\nAuthorization: {{api_token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{api_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}\\investor_interest_info\\1?user_type_id=1",
+			"folder": "048112ba-b170-8498-1b81-2760c754486b",
+			"queryParams": [
+				{
+					"key": "user_type_id",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507454348495,
+			"name": "edit by user_id",
+			"description": "",
+			"collectionId": "cac58688-1cbf-38e6-631f-f43d555e34d8",
+			"responses": [],
+			"rawModeData": "{\n    \"resource_info_id\" : \"1\",\n   \t\"farmer_user_cultivated_area_info_id\" : \"1\",\n   \t\"invest_money\" : \"1000\",\n   \t\"expect_profit_percent\" : \"10\",\n    \"risk_accept_percent\" : \"1000\",\n    \"return_time_year\" : \"10\"\n}"
+		},
+		{
+			"id": "0916def2-4ea0-c97b-3cf8-871c26d5e780",
+			"headers": "Authorization: {{api_token}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{api_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}\\investor_interest_info\\1",
+			"folder": "048112ba-b170-8498-1b81-2760c754486b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507454354569,
+			"name": "delete",
+			"description": "",
+			"collectionId": "cac58688-1cbf-38e6-631f-f43d555e34d8",
+			"responses": []
+		},
+		{
+			"id": "65aff08a-157c-1dd2-3cfc-d3013b9ad664",
+			"headers": "Authorization: {{api_token}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{api_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}\\investor_interest_info",
+			"folder": "048112ba-b170-8498-1b81-2760c754486b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507454241166,
+			"name": "index",
+			"description": "",
+			"collectionId": "cac58688-1cbf-38e6-631f-f43d555e34d8",
+			"responses": []
+		},
+		{
+			"id": "88c124d3-30b0-0ede-68fa-46d2a13dbf93",
+			"headers": "Content-Type: application/json\nAuthorization: {{api_token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{api_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}\\investor_interest_info",
+			"folder": "048112ba-b170-8498-1b81-2760c754486b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507454330310,
+			"name": "add",
+			"description": "",
+			"collectionId": "cac58688-1cbf-38e6-631f-f43d555e34d8",
+			"responses": [],
+			"rawModeData": "{\n    \"user_id\" : \"1\",\n    \"user_type_id\" : \"1\",\n    \"resource_info_id\" : \"1\",\n   \t\"farmer_user_cultivated_area_info_id\" : \"1\",\n   \t\"invest_money\" : \"1000\",\n   \t\"expect_profit_percent\" : \"10\",\n    \"risk_accept_percent\" : \"1000\",\n    \"return_time_year\" : \"10\"\n}"
+		},
+		{
+			"id": "8e34f068-b00d-d3bf-8449-e6b679e9487a",
+			"headers": "Authorization: {{api_token}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{api_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}\\investor_interest_info\\user_id\\1?user_type_id=1",
+			"folder": "048112ba-b170-8498-1b81-2760c754486b",
+			"queryParams": [
+				{
+					"key": "user_type_id",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507454250879,
+			"name": "get by user_id",
+			"description": "",
+			"collectionId": "cac58688-1cbf-38e6-631f-f43d555e34d8",
+			"responses": []
+		},
+		{
+			"id": "fb5558a3-9d49-9c1b-07b9-89c25e1ac370",
+			"headers": "Authorization: {{api_token}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{api_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}\\investor_interest_info\\1",
+			"folder": "048112ba-b170-8498-1b81-2760c754486b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507454245310,
+			"name": "get",
+			"description": "",
+			"collectionId": "cac58688-1cbf-38e6-631f-f43d555e34d8",
+			"responses": []
+		}
+	]
+}
